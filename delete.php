@@ -32,7 +32,7 @@
  
 <body>
     <div class="container">
-     
+    <center>
                 <div class="span10 offset1">
                     <div class="row">
                         <h3>Supprimer un utilisateur</h3>
@@ -47,7 +47,7 @@
                         </div>
                     </form>
                 </div>
-                 
+                </center>   
     </div> <!-- /container -->
   </body>
 </html>
