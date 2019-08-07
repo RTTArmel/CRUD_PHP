@@ -10,7 +10,7 @@
     } else {
         $pdo = Database::connect();
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $sql = "SELECT * FROM customers where id = ?";
+        $sql = "SELECT * FROM tsiory where id = ?";
         $q = $pdo->prepare($sql);
         $q->execute(array($id));
         $data = $q->fetch(PDO::FETCH_ASSOC);
@@ -28,7 +28,7 @@
  
 <body>
     <div class="container">
-     
+    <center>
                 <div class="span10 offset1">
                     <div class="row">
                         <h3><?php echo 'Affichage de l\'utilisateur N°:' .$data['id'];?></h3>
@@ -60,7 +60,7 @@
                       
                     </div>
                 </div>
-                 
+                </center>         
     </div> <!-- /container -->
   </body>
 </html>

@@ -55,7 +55,7 @@
 
 <body>
     <div class="container">
-     
+    <center>
                 <div class="span10 offset1">
                     <div class="row">
                         <h3>Ajout enregistrement</h3>
@@ -71,6 +71,7 @@
                             <?php endif; ?>
                         </div>
                       </div>
+                      <br/>
                       <div class="control-group <?php echo !empty($emailError)?'error':'';?>">
                         <label class="control-label">Email Address</label>
                         <div class="controls">
@@ -80,6 +81,7 @@
                             <?php endif;?>
                         </div>
                       </div>
+                      <br/>
                       <div class="control-group <?php echo !empty($mobileError)?'error':'';?>">
                         <label class="control-label">Mobile Number</label>
                         <div class="controls">
@@ -89,13 +91,14 @@
                             <?php endif;?>
                         </div>
                       </div>
+                      <br/>
                       <div class="form-actions">
                           <button type="submit" class="btn btn-success">Ajouter</button>
                           <a class="btn btn-secondary" href="index.php">Back</a>
                         </div>
                     </form>
                 </div>
-                 
+                </center>    
     </div> <!-- /container -->
   </body>
 </html>
